@@ -5,6 +5,7 @@ MonoImporter:
   serializedVersion: 2
   defaultReferences:
   - card: {fileID: 7383695971597329170, guid: e70e84d09665cb0428a9c200fa107e27, type: 3}
+  - card2: {fileID: 919132149155446097, guid: def927a98cc90774f8f76906bf124748, type: 3}
   - point: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
