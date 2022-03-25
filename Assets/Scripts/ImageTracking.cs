@@ -18,13 +18,15 @@ public class ImageTracking : MonoBehaviour
     private void Awake()
     {
         trackedImageManager = FindObjectOfType<ARTrackedImageManager>();
-        foreach (GameObject gObj in prefabList)
-        {
-            GameObject newPrefab = Instantiate(gObj, Vector3.zero, Quaternion.identity);
-            newPrefab.name = gObj.name;
-            spawnedPrefabs.Add(newPrefab.name, newPrefab);
-        }
-        Instantiate(card, point.transform.position, Quaternion.identity);
+        // int prefabIndex = UnityEngine.Random.Range(0, 5);
+        Instantiate(prefabList[26], Vector3.zero, Quaternion.identity);
+        // foreach (GameObject gObj in prefabList)
+        // {
+        //     GameObject newPrefab = Instantiate(gObj, Vector3.zero, Quaternion.identity);
+        //     newPrefab.name = gObj.name;
+        //     spawnedPrefabs.Add(newPrefab.name, newPrefab);
+        // }
+        // Instantiate(card, point.transform.position, Quaternion.identity);
     }
     private void OnEnable()
     {
